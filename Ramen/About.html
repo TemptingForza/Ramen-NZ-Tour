@@ -1,0 +1,65 @@
+ <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>About Us</title>
+    <link rel="stylesheet" href="Style.css">
+  </head>
+  <body style="background-color:rgb(41,41,41);">
+  
+    <div class="logoDiv">
+        <div class= "smallLogo"><a href="home.html">
+            <img src="RamenNZTour.jpg" ></a>
+        <div class=smallLogoHeader><header> RAMEN NZ TOUR</header></div>
+    </div>
+      
+        <ul >
+            <li><a href="home.html">Home</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="details.html">Details</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="login.html">Login</a></li>
+
+          
+        </ul>
+        <br>
+    </div>
+          <div id="content-wrap">
+              <div class="tt">
+                  <h1>We will Show You the Beauty In New Zealand</h1>
+                  <p>RAMEN NZ TOUR has only one thing for everyone 
+                    and that is Aoetearoa Itself
+                  </p>
+                  <p>Come for the journey stay for the view.</p>
+                  
+                  
+              </div>
+              <br>
+              <div id="map" style="width:70%;height:400px;"></div>
+      
+              <script>
+                  function myMap() { 
+                      var hamilton = {lat: -37.78333, lng: 175.28};
+                      var map = new google.maps.Map(document.getElementById("map"), {zoom: 8, center: hamilton});
+                      var marker = new google.maps.Marker({position: hamilton, map: map}); 
+              }
+              </script>
+      
+              <script async defer
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfm7D1TfDR4JvdICliLfo_hLF-cV68GHA&callback=myMap">
+              </script>
+      
+      
+      
+              
+          </div>
+          
+
+        <footer id="footer">
+          <a href="about.html" >About Us</a>
+          <a href="https://www.facebook.com">Facebook</a>
+          <a href="https://www.instagram.com">Instagram</a>
+          <a href="https://www.youtube.com/watch?v=Lrj2Hq7xqQ8">Policy</a>
+      </footer>
+  
+  </body>

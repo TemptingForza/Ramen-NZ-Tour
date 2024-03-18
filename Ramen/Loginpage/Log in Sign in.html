@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+	    <link rel="stylesheet" href="booking page.css" />
+
+</head>
+<body>
+
+	    <!--logo start-->
+		
+		
+    <div class="logoDiv">
+        <div class="smallLogo">
+            <a href="home.html">
+                <!--<img src="logo3.png">-->
+                <img src="RamenNZTour.svg">
+            </a>
+            <div class=smallLogoHeader><header> RAMEN NZ TOUR</header></div>
+        </div>
+
+
+
+
+        <!-- <div id="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="./logo3.png" alt="" >
+            </a>
+        </div>
+    </div>-->
+        <!--logo end-->
+        <!--navbar start-->
+        <ul class="nav">
+
+            <li><a href="home.html">Home</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="details.html">Details</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="login.html">Login</a></li>
+
+        </ul>
+        <!--navbar end-->
+
+        <section>
+            <div class="container">
+                <div class="user singinBx">
+                    <!--<div class="imgBx"><img src="assets/images/p1.jpeg" alt=""></div>-->
+                    <div class="formBx">
+                        <form action="index.html">
+                            <h2>Log in</h2>
+                            <input type="text" name="" placeholder="Username">
+                            <input type="password" name="" placeholder="Password">
+                            <input type="submit" name="" value="Login">
+                            <p class="signup">
+                                Don't have an account ?<a href="#" onclick="
+                            toggleForm();">Regist</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+                <div class="user singupBx">
+                    <div class="formBx">
+                        <form action="index.html">
+                            <h2>Create an Account</h2>
+                            <input type="text" name="" placeholder="Username">
+                            <input type="email" name="" placeholder="Email Address">
+                            <input type="password" name="" placeholder="Create Password">
+                            <input type="password" name="" placeholder="Confirm Password">
+                            <input type="submit" name="" value="Sign up">
+                            <p class="signup">
+                                Already have an account ?<a href="#" onclick="
+                            toggleForm();">Sign In.</a>
+                            </p>
+                        </form>
+                    </div>
+                    <!--<div class="imgBx"><img src="assets/images/p2.jpeg" alt=""></div>-->
+                </div>
+            </div>
+        </section>
+        <!--footer start-->
+        <footer id="footer">
+            <a href="about.html">About Us</a>
+            <a href="https://www.facebook.com">Facebook</a>
+            <a href="https://www.instagram.com">Instagram</a>
+            <a href="https://www.youtube.com/watch?v=Lrj2Hq7xqQ8">Policy</a>
+        </footer>
+
+        <!--footer end-->
+        <script type="text/javascript">
+            function toggleForm() {
+                var container = document.querySelector('.container');
+                container.classList.toggle('active')
+            }
+
+        </script>
+</body>
+</html>

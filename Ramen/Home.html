@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="Style.css">
+  </head>
+  <body style="background-color: rgb(41,41,41);">
+  
+    <div class="logoDiv">
+        <div class= "smallLogo"><a href="home.html">
+            <img src="svg/RamenNZTour.svg" ></a>
+        <div class=smallLogoHeader><header> RAMEN NZ TOUR</header></div>
+    </div>
+      
+        <ul >
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Booking Page.html">Booking</a></li>
+            <li><a href="details.html">Details</a></li>
+            <li><a href="gallary.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="login.html">Login</a></li>
+
+          
+        </ul>
+        <br>
+            
+        </div>
+        <br>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="svg/101.svg" style="width:100%">
+              <div class="text"> </div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="svg/102.svg" style="width:100%">
+              <div class="text"> </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="svg/104.svg" style="width:100%">
+                <div class="text"> </div>
+              </div>
+            
+            </div>
+            <br>
+    
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+
+             <script>
+                var slideIndex = 0;
+                showSlides();
+
+                // Thumbnail image controls
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides() {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 5000); // Change image every 2 seconds
+                }
+            </script>
+            </div>
+            <div class="imagetext1" style="width: 17%;">
+              <img src="svg/Image1.svg">
+              <div class="imagetext">Ramen NZ Tour provides a wide range transportation service all over New Zealand</div>
+            </div>
+
+            <div class="imagetext2" style="width: 17%;">
+              <img src="svg/Image2.svg">
+              <div class="imagetext">Ramen NZ Tour has a wide range of quality hotels</div>
+            </div>
+
+            <div class="imagetext3" style="width: 17%;">
+              <img src="svg/Image3.svg">
+              <div class="imagetext">New Zealand has great and fantastic views to visit</div>
+            </div>
+          
+            <div class="imagetext4" style="width: 17%;">
+              <img src="svg/Image4.svg">
+              <div class="imagetext">You can visit all these location for any occasion</div>
+            </div>
+          
+
+            <div class="video">
+              <video controls>
+                <source src="New Zealand 4K - AMAZING Beautiful Nature with Relaxing Music & Soundscapes - Relaxation Film.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+
+        <footer id="footer">
+            <a href="about.html" >About Us</a>
+            <a href="https://www.facebook.com">Facebook</a>
+            <a href="https://www.instagram.com">Instagram</a>
+            <a href="https://www.youtube.com/watch?v=Lrj2Hq7xqQ8">Policy</a>
+        </footer>
+    
+    </body>

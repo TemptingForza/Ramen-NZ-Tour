@@ -1,0 +1,300 @@
+
+/*navbar style start */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+ul {
+    position: sticky;
+    top: 0;
+    width: 99.7%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(41,41,41);
+    font-family: 'Odibee Sans', cursive;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: lightskyblue;
+    z-index: 1;
+    margin-top: 2%;
+}
+
+li {
+    float: left;
+    width: 20%;
+}
+
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 10px 10px;
+        text-decoration: none;
+        padding-bottom: 10;
+    }
+
+        li a:hover {
+            background-color: white;
+            color: #80e5ff;
+        }
+
+.smallLogo a img {
+    width: 150px;
+    height: 150px;
+}
+
+.logoDiv {
+    width: 100%;
+    height: 10%;
+    top: 10%;
+    background-color: black;
+}
+
+.smallLogo {
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.smallLogoHeader {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header {
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    font-family: 'Odibee Sans', cursive;
+}
+/*navbar style end */
+
+/* Log in sign in */
+section{
+    position: relative;
+    min-height: 100vh;
+    background: #4F5761;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px ;
+}
+
+section .container{
+    position: relative;
+    width: 450px;
+    height: 500px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+section .container .user{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+
+section .container .user .formBx{
+    position: relative;
+    width: 80%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    transition: .5s;
+}
+
+section .container .user .formBx form h2{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+section .container .user .formBx form input{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    background: #f5f5f5;
+    color: #333;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    margin: 8px 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-size: 300;
+}
+
+section .container .user .formBx form input[type="submit"]{
+    max-width: 300px;
+    background: #677eff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: .5s;
+}
+
+section .container .user .formBx form .signup{
+    position: relative;
+    margin-top: 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #555;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+section .container .user .formBx form .signup a{
+    font-weight: 600;
+    text-decoration: none;
+    color: #67ef;
+}
+
+section .container .singupBx{
+    pointer-events: none;
+}
+
+section .container.active .singupBx{
+    pointer-events: initial;
+}
+
+section .container .singupBx .formBx{
+    left: 100%;
+}
+
+section .container.active .singupBx .formBx{
+    left: 10%;
+}
+
+section .container .singupBx .imgBx{
+    left: -100%;
+}
+
+section .container.active .singupBx .imgBx{
+    left: 0;
+}
+
+
+section .container .singinBx .formBx{
+    left: 10%;
+    /*position: center;*/
+}
+
+section .container.active .singinBx .formBx{
+    left: 100%;
+}
+
+section .container .singinBx .imgBx{
+    left: 0;
+}
+
+section .container.active .singinBx .imgBx{
+    left: 100%;
+}
+
+@media (max-width: 991px){
+    section .container{
+        max-width: 400px;
+    }
+    section .container .imgBx{
+        display: none;
+    }
+    section .container .user .formBx{
+        width: none;
+    }
+}
+
+/* Login signin ends */
+
+/* content style start */
+#content {
+    width: 100%;
+    padding: 40px 0px;
+    padding: 40px 0px 80px;
+}
+
+.content {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.layui-form-label {
+    width: 600px;
+    text-align: center;
+    font-size: 30px;
+}
+
+input {
+    width: 70%;
+    margin: 8px 0;
+    box-sizing: border-box;
+    padding: center;
+    text-align: center;
+}
+
+    input[type = "date"] {
+        width: 51%;
+        position: center;
+    }
+
+@keyframes rotation_anim {
+    100% {
+        transform: rotatey(360deg);
+    }
+}
+
+/* content style end */
+
+
+/*footer start*/
+#footer {
+    background-color: rgb(41,41,41);
+    position: absolute;
+    width: 100%;
+    height: 10%;
+}
+
+    #footer a {
+        float: left;
+        display: flex;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        font-family: 'Odibee Sans', cursive;
+    }
+
+        #footer a:hover {
+            background-color: white;
+            color: #80e5ff;
+        }
+
+/*footer end*/
+
+
+

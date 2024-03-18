@@ -1,0 +1,188 @@
+
+/*navbar style start */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+ul {
+    position: sticky;
+    top: 0;
+    width: 99.7%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(41,41,41);
+    font-family: 'Odibee Sans', cursive;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: lightskyblue;
+    z-index: 1;
+    margin-top: 2%;
+}
+
+li {
+    float: left;
+    width: 20%;
+}
+
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 10px 10px;
+        text-decoration: none;
+        padding-bottom: 10;
+    }
+
+        li a:hover {
+            background-color: white;
+            color: #80e5ff;
+        }
+
+.smallLogo a img {
+    width: 150px;
+    height: 150px;
+}
+
+.logoDiv {
+    width: 100%;
+    height: 10%;
+    top: 10%;
+    background-color: black;
+}
+
+.smallLogo {
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.smallLogoHeader {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header {
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    font-family: 'Odibee Sans', cursive;
+}
+/*navbar style end */
+
+
+/* content style start */
+#content {
+    width: 100%;
+    padding: 40px 0px;
+    padding: 40px 0px 80px;
+}
+
+.content {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.layui-form-label {
+    width: 600px;
+    text-align: center;
+    font-size: 30px;
+}
+
+input {
+    width: 70%;
+    margin: 8px 0;
+    box-sizing: border-box;
+    padding: center;
+    text-align: center;
+}
+
+
+    input[type = "date"] {
+        width: 51%;
+        position: center;
+    }
+
+@keyframes rotation_anim {
+    100% {
+        transform: rotatey(360deg);
+    }
+}
+
+/* content style end */
+
+
+
+/* multistep form starts
+/* Hide all steps by default: */
+ .tab {
+    display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+ .step { 
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+    /*/* Mark the active step: */
+     .step.active {
+        opacity: 1;
+    } 
+
+    /* Mark the steps that are finished and valid:*/
+    .step.finish {
+        background-color: #04AA6D;
+    } 
+
+    /*multistepform ends*/
+
+/*    table {
+        width: 100%;
+    } */
+
+
+
+/*footer start*/
+#footer {
+    background-color: rgb(41,41,41);
+    position: absolute;
+    width: 100%;
+    height: 10%;
+}
+
+    #footer a {
+        float: left;
+        display: flex;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        font-family: 'Odibee Sans', cursive;
+    }
+
+        #footer a:hover {
+            background-color: white;
+            color: #80e5ff;
+        }
+
+/*footer end*/
+
+
+

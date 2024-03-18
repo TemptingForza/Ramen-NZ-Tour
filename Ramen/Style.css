@@ -1,0 +1,517 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+  
+  ul {
+    position:sticky;
+    top: 0;
+    width: 99.7%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: url(svg/Backstar.svg);
+    background-color:rgb(20,20,20);
+    font-family: "Poppins", sans-serif;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: lightskyblue;
+    z-index: 1;
+    margin-top: 2%;
+  
+    
+    }
+  
+  li {
+    float: left;
+    width: 16.6%;
+  }
+  
+  li a {
+    display: block;
+    color:white;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    padding-bottom: 10;
+    }
+  
+  li a:hover {
+    background-color: white;
+    color:#80e5ff;
+    }
+  
+    .logoDiv{
+      top: 10%;
+      width: 100%;
+      background-color:rgb(20,20,20);
+    }
+  
+    .smallLogo{
+      margin-top: 10px;
+      display:block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
+
+    .smallLogo a img{
+      width: 150px;
+      height: 150px;
+    }
+    .smallLogoHeader{
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    header{
+      font-size: 50px;
+      text-align: center;
+      color :white;
+      font-family: "Poppins", sans-serif;
+    }
+  
+    #footer {
+      background-color: rgb(20,20,20);
+      position:absolute;
+      bottom: -600px;
+      width: 100%;
+      height: 10%;
+    
+  
+      }
+  
+  #footer a {
+          float: left;
+          display: flex;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+          font-family: "Poppins", sans-serif;
+      }
+  
+  #footer a:hover {
+          background-color:white;
+          color: #80e5ff;
+      }
+  
+  
+  
+  input[type=text], input[type=password], select  {
+    width:80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #80e5ff;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  .imgcontainer {
+    text-align: center;
+  
+  }
+  
+  .container {
+    padding: 16px;
+    text-align: center;
+  }
+  
+  .button{
+    text-align: center;
+    padding-top: 2%;
+  }
+  .button2{
+    text-align: center;
+    padding-top: 2%;
+  }
+  
+  .headContainer{
+    text-align: center;
+    
+  }
+  
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1280px;
+    max-height: 960px ;
+    position: relative;
+    margin: auto;
+    border-style: solid;
+    border-radius: 4px;
+    border-color: lightskyblue;
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 0;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration:1.5s;
+    animation-name: fade;
+    animation-duration: 2.5s;
+  }
+
+  video {
+    width: 800px;
+    height: 455px;
+    border-style: solid;
+    border-radius: 4px;
+    border-color: lightskyblue;
+    position: absolute;
+    left: 120px;
+  }
+
+  .imagetext {
+    position: absolute;
+    bottom: 8px;
+    color: #f2f2f2;
+    background: rgba(41, 41, 41, 0.60);
+    text-align: center;
+    font-family: "Poppins", sans-serif; 
+  }
+
+  .imagetext1 {
+    position: absolute;
+    border: solid lightskyblue;
+    border-radius: 4px;
+    right: 595px;
+  }
+
+  .imagetext2 {
+    position: absolute;
+    border: solid lightskyblue;
+    border-radius: 4px;
+    bottom: -320px;
+    right: 595px;
+  }
+
+  .imagetext3 {
+    position: absolute;
+    border: solid lightskyblue;
+    border-radius: 4px;
+    right: 205px;
+  }
+
+  .imagetext4 {
+    position: absolute;
+    border: solid lightskyblue;
+    border-radius: 4px;
+    bottom: -320px;
+    right: 205px;
+  }
+
+  .imagetext1 img {
+    width: 100%;
+  }
+
+  .imagetext2 img {
+    width: 100%;
+  }
+
+  .imagetext3 img {
+    width: 100%;
+  }
+
+  .imagetext4 img {
+    width: 100%;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+  
+  #accountContainer {
+    margin-left: auto;
+    margin-right: auto;
+    word-wrap: break-word;
+    text-align: left;
+    width:60%;
+  
+  }
+  #concessionsContainer {
+    margin-left: auto;
+    margin-right: auto;
+    word-wrap: break-word;
+    text-align: center;
+    width:60%;
+  
+  }
+
+  /*About Us Map*/
+  #map {
+    height: 400px;
+    width: 60%;
+    padding-bottom: 10%;
+  padding-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  
+  .tt {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    word-wrap: break-word;
+    width: 400px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+  }
+
+  /*gallery*/
+  .gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    width: 1890px;
+  }
+  
+  .gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .desc {
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+  }
+
+  #footer1 {
+    background-color: rgb(20,20,20);
+    position:absolute;
+    bottom: -11790px;
+    width: 100%;
+    height: 10%;
+  }
+  
+  #footer1 a {
+    float: left;
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  #footer1 a:hover {
+    background-color:white;
+    color: #80e5ff;
+  }
+
+  /*Login style*/
+section{
+    position: relative;
+    min-height: 100vh;
+    background: #4F5761;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px ;
+}
+
+section .container{
+    position: relative;
+    width: 450px;
+    height: 500px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+section .container .user{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+
+section .container .user .formBx{
+    position: relative;
+    width: 80%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    transition: .5s;
+}
+
+section .container .user .formBx form h2{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+section .container .user .formBx form input{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    background: #f5f5f5;
+    color: #333;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    margin: 8px 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-size: 300;
+}
+
+section .container .user .formBx form input[type="submit"]{
+    max-width: 300px;
+    background: #677eff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: .5s;
+}
+
+section .container .user .formBx form .signup{
+    position: relative;
+    margin-top: 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #555;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+section .container .user .formBx form .signup a{
+    font-weight: 600;
+    text-decoration: none;
+    color: #67ef;
+}
+
+section .container .singupBx{
+    pointer-events: none;
+}
+
+section .container.active .singupBx{
+    pointer-events: initial;
+}
+
+section .container .singupBx .formBx{
+    left: 100%;
+}
+
+section .container.active .singupBx .formBx{
+    left: 10%;
+}
+
+section .container .singupBx .imgBx{
+    left: -100%;
+}
+
+section .container.active .singupBx .imgBx{
+    left: 0;
+}
+
+
+section .container .singinBx .formBx{
+    left: 10%;
+    position: center;
+}
+
+section .container.active .singinBx .formBx{
+    left: 100%;
+}
+
+section .container .singinBx .imgBx{
+    left: 0;
+}
+
+section .container.active .singinBx .imgBx{
+    left: 100%;
+}
+
+@media (max-width: 991px){
+    section .container{
+        max-width: 400px;
+    }
+    section .container .imgBx{
+        display: none;
+    }
+    section .container .user .formBx{
+        width: none;
+    }
+  }
